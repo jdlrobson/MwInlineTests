@@ -1,0 +1,13 @@
+{
+  "version": "1.0.0",
+  "description": "",
+  "main": "inline.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^27.4.7"
+  }
+}
