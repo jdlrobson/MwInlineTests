@@ -3,9 +3,9 @@ const inline = require( './inline.js' );
 const PREFIX = '';
 const makeCookie = ( obj ) => {
 	const str = Object.keys( obj ).map( ( key ) => {
-		return `${key}%3D${obj[key]}`;
-	} ).join( '%2C' );
-	return `${PREFIX}mwclientprefs=${str}`;
+		return `${key}~${obj[key]}`;
+	} ).join( '!' );
+	return `${PREFIX}mwclientpreferences=${str}`;
 };
 
 describe( 'The MediaWiki inline script', () => {
